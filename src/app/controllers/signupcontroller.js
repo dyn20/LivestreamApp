@@ -6,7 +6,7 @@ const checkx = 0;
 class SingnupController{
     signup(req,res)
     {
-        res.render('signup');
+        res.render('signup.hbs');
     }
     store(req, res)
     {
@@ -19,15 +19,15 @@ class SingnupController{
                })
            }
            let user = new User ({
+            fullname: req.body.fullname,
+            phonenumber: req.body.phonenumber,
             username: req.body.username,
             email: req.body.email,
             password: hashedPass
         })
         user.save()
         .then(user =>{
-            res.json({
-                message: "User Added Sucessfully"
-            })
+            res.redirect('/login');
         })
         .catch(error => {
             res.json({

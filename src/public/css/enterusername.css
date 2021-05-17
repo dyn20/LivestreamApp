@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta:wght@200&display=swap');
+
+.enter-username{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #393e46;
+    font-family: Krona One;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 2px 5px 5px #151515;
+}
+
+input{
+    border:0;
+    border: 2px solid #3498db;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: Krona One;
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    background-color: #65d6ce;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    font-family: Krona One;
+}
+
+.button:hover{
+    background-color: #3498db;
+} 

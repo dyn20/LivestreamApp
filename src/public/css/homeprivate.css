@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta:wght@200&display=swap');
+
+/*Neon button*/
+.check{
+    padding-top: 60px;
+    text-align: center;
+}
+.neon-button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #87a7b3;
+    font-family: Krona One;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    /*transition: 0.2s;*/
+}
+
+
+
+.neon-button {
+    font-family: Krona One;
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    /*transition-delay: 1s;*/
+}
+
+.neon-button span {
+    position: absolute;
+    display: block;
+}
+
+
+
+.neon-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+
+
+.neon-button span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.neon-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.neon-button span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    /*transition-delay: 0.5s;*/
+}
+
+
+
+.neon-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.neon-button span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    /*transition-delay: 0.25s;*/
+}
+
+
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    /*transition-delay: 0.75s;*/
+}
+
+/*
+.neon-button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #87a7b3;
+    font-family: Krona One;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+
+.neon-button:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.neon-button span {
+    position: absolute;
+    display: block;
+}
+
+
+
+.neon-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+
+
+.neon-button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.neon-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.neon-button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.neon-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.neon-button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+*/
+
+.card-body-app
+{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 600px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: none;
+    background: rgba(0,25,25,0.2);
+}
+.header{
+    padding-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    font-family: Krona One;
+    color: #2196f3 ;
+}
+p{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: Krona One;
+    color: #87a7b3;
+}
+.card-body-admin{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: none;
+    background: rgba(0,25,25,0.2);
+}
+

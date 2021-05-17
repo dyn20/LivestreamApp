@@ -2,5 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 module.exports = router;
-const Publiccontroller = require('../app/controllers/homeprivatecontroller');
-router.get('/',Publiccontroller.home);
+const Privatecontroller = require('../app/controllers/homeprivatecontroller');
+router.get('/profile',Privatecontroller.profile)
+router.get('/edit',Privatecontroller.editProfile);
+router.post('/edit',Privatecontroller.editProfile);
+router.get('/enteruser',Privatecontroller.EnterUsername);
+router.get('/',Privatecontroller.home);

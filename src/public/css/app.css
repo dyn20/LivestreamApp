@@ -1,4 +1,232 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta:wght@200&display=swap');
+
+body
+{
+    background-image: linear-gradient(to right, #031321, #3A6073);
+    font-family: Krona One;
+}
+h3{
+    text-align: center;
+    margin-left: 1.5rem;
+    color: #65d6ce;
+    font-size: 15px;
+}
+ul{
+    color: white;
+}
+li{
+    cursor: pointer;
+    color: white;
+    margin-left: 1.5rem;
+}
+li:hover{
+    color: #65d6ce;
+}
+
+.main{
+    margin-top: 1rem;
+    float: none;
+   
+}
+
+.display-video{
+    float: left;
+    margin-left: 2rem;
+    width: 70%;
+    
+}
+
+.display-joiner{
+    font-size: 12px;
+    float: left;
+    height: 600px;
+    width: 23%;
+    border: 1px;
+    background: #393e46;
+    box-shadow: 5px 2px 5px 5px #151515;
+}
+
+.display-chat{
+    display: none;
+    font-size: 12px;
+    float: left;
+    height: 600px;
+    width: 23%;
+    border: 1px;
+    background: #393e46;
+    box-shadow: 5px 2px 5px 5px #151515;
+}
+
+.button{
+    float: right;
+}
+
+.chat{
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.chat:hover{
+    color: #65d6ce;
+    font-size: 20px;
+}
+
+.show-hide-users{
+    cursor: pointer;
+}
+.show-hide-users:hover{
+    color: #65d6ce;
+    font-size: 20px;
+}
+
+.online-us{
+    margin-top: 0rem;
+}
+/*
+.enter-username{
+    color: #65d6ce;
+    margin: 0 auto; 
+    float: none;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    background: rgba(0,25,25,0.2);
+    text-align: center;
+    display: none;
+}
+
+.center{
+    padding-top: 3rem;
+}
+
+input{
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: Krona One;
+}
+
+.button1 {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    align-content: center;
-    }
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.button1:hover{
+    background-color: black;
+} 
+*/
+
+/*you join*/
+
+.You-join {
+    position: relative;
+    width: fit-content;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid lightblue;
+    background: lightblue;
+    margin-left: 0.5rem;
+}
+
+.You-join p {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    resize: none;
+}
+
+/*Other join*/
+.Other-join {
+    position: relative;
+    width: fit-content;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid gray;
+    background: gray;
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+  
+.Other-join p {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    
+    margin: 0;
+    padding: 0;
+    
+    border: none;
+    resize: none;
+}
+
+
+ .joiner-name{
+    font-size: 9px;
+    color: white;
+}
+.msg-content{
+    color: black;
+}
+.user-joined{
+    font-size: 9px;
+    font-style: italic;
+    color: darkgray;
+}
+
+.send{
+    cursor: pointer;
+    height: 3.4rem;
+    background: whitesmoke;
+}
+
+textarea{
+    float: left;
+    position: relative;
+    width: 270px;
+    border:none;
+    height: 3rem;
+    background: whitesmoke;
+}
+
