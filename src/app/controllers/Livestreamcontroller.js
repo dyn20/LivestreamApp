@@ -1,10 +1,11 @@
-const { set } = require("mongoose");
+const roomID = require("../models/roomid");
+const {uid} = require('uid');
 
 class LivestreamController
 {
-    Livestream(req,res,next)
+    Livestream(req,res)
     {
-        res.render('livestream.ejs')
+        res.render('livestream.ejs');
     }
 }
 module.exports = new LivestreamController;

@@ -1,0 +1,89 @@
+h2
+{
+font-family: "Poppins", sans-serif;
+position: absolute;
+top: 40%;
+left: 0;
+right: 0;
+text-align: center;
+margin: 30px 0 0;
+font-size: 4em;
+opacity: 0;
+font-weight: 900;
+color: #D8E3E7;
+overflow: hidden;
+}
+h2 span{
+    color: #CF0000;  
+  }
+h2::before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards
+
+}
+@keyframes animate
+{
+    0%
+    {
+        left: -20%;
+    }
+    100%
+    {
+        left: 110%;
+    }
+}
+video
+{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+h2{
+    -webkit-animation: logo 4s ease-out 5s;
+	-moz-animation: logo 4s ease-out 5s;
+	-ms-animation: logo 4s ease-out 5s;
+	-o-animation: logo 4s ease-out 5s;
+	animation: logo 4s ease-out 5s;
+
+}
+@-webkit-keyframes logo {
+	0% { -webkit-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+	0% { -moz-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+	0% { -ms-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+	0% { -o-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+    0% { transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { transform: scale(0.1); opacity: 0; }
+}

@@ -1,46 +1,57 @@
 <link rel="stylesheet" href="/css/homeprivate.css">
 <link rel="stylesheet" href="/css/navbav.css">
+<link rel="stylesheet" href="/css/star.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="/dist/joinorcreate.js"></script>
 <div class="mt-5">
     <div>
     <ul>
         <li><a class="active" href="/home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/home/about">About</a></li>
+        <li><a href="#">Forum</a></li>
         <li><a class="active" href="/home/profile">Profile</a></li>
         <li style="float:right"><a class="active" href="/logout">Logout</a></li>
     </ul>
     </div>
-    <div class="check">
-    <a class="neon-button" href="/Livestream">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-         START LIVESTREAM
-    </a>
+    <div class="neon-wrapper" id="neon-wrapper">
+        <h1 class="neon-text">LIVESTREAM</h1>
+        <form class="form-input" method="POST">
+            <div class="form__group">
+                <input type="text" name="nickname" class="form__field" placeholder="Nick name" size="40">
+                <label for="name" class="form__label">NICK NAME</label>
+            </div>
+            <div class="form__group">
+                <input type="text" name="idroom" class="form__field" placeholder="Room ID" size="40" required>
+                <label for="roomid" class="form__label">ID ROOM</label>
+            </div>
+            <div class="button">
+                <div class="button1">
+                    <button type="submit"> JOIN </button>
+                </div>
+                <div class="other-option">
+                    <p><a href="#" id="create">Create</a> a new room?</p>              
+                </div>
+            </div>
+        </form>
     </div>
-    <div id = "about" class="card-body">
-    <div class="card-body-app">
-            <p class="header">Something about our Livstream Application</p>
-            <p>
-                This application is our first Application We have done.<br>
-                <br>First of all, This Application is a project for the basic network programming which we learn in this term.<br>
-                <br>Further, we look forward to perfecting this application in the future so that it could be used as a real Application.<br>
-                <br>This app is currently only for our subject and completely non-commercial here.<br>
-                <br>In this project, we have learned a few ideas and code from other authors, if you find out the same between them please forgive us.<br>
-                <br>Thank you for being here and taking your time to experience our Application.<br>
-                <br>Sincerely,
-                <br>My Team
-            </p>
-        </div>
-        <div class="card-body-admin">
-            <p class="header">Something about us</p>
-            <p>Hello, My Friends!
-                <br>Once again, thank you for being here with us.<br>
-                <br>It is not necessary but we still want to introduce a little about ourselves so that we can better understand each other. Hope you feel comfortable with this.<br>
-                <br>We are studying at University of Information Technology now. We are really probationary coders with not very clever ways of handling situations.<br>
-                <br>Therefore, If you have any matter with our Application or you want to give us your suggestions, please contact us!<br>
-            </p>
-        </div>
+     <div class="neon-wrapper2" id="neon-wrapper2">
+        <h1 class="neon-text">LIVESTREAM</h1>
+        <form class="form-input" method="POST" action="/home/create">
+            <div class="form__group">
+                <input type="text" class="form__field" placeholder="Nick name" size="40">
+                <label for="name" class="form__label">NICK NAME</label>
+            </div>
+            <div class="button">
+                <div class="button1">
+                    <button type="submit"  >CREATE</button>
+                </div>
+                <div class="other-option">
+                        <p><a href="#" id="join">Join</a> an available room?</p>              
+                </div>
+            </div>
+    </form>
     </div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 </div>

@@ -50,7 +50,8 @@ class LoginController
                         res.cookie('token',token,{maxAge: 36000000});
                         res.cookie('email',email,{maxAge: 36000000});
                         res.cookie('username',username,{maxAge: 36000000});
-                        res.redirect('/home')             
+                        res.redirect('/home')   
+                               
                     }
                     else
                     {
@@ -60,7 +61,7 @@ class LoginController
             }
             else
             {
-                res.json({message: 'Invalid email'});
+                res.json({message: 'Invalid email!'});
             }
         })
     }

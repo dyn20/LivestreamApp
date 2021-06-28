@@ -1,15 +1,32 @@
-<link rel="stylesheet" href="/css/login.css">
-<div class="bg-img">
-    <div class="content">
-    <form method="POST" class="box">
-        <h1>Login Form</h1>
-        <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/star.css">
+  <div class="container">
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+            <form method="POST">
+                <h1 class="sign__word">Login Form</h1>
+                <div class="form-group">
+                    <div class="form-group1">
+                        <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group1">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required> 
+                    </div>
+                </div>
+                <div>
+            <button type="submit" class="bn30">Login</button>
+            </div>
+            <div class="register">
+            <a  href="/signup" type="submit">Register</a>
+            </div>
+        </form>
         </div>
-        <div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required> 
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-   </form>
-</div>
-</div>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+  </div>

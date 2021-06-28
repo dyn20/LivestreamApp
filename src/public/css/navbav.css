@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta:wght@200&display=swap');
 body
 {
-    background-image: linear-gradient(to right, #031321, #3A6073);
+    /*background-image: linear-gradient(to right, #031321, #3A6073);*/
+    background: #000;
 }
 
 li{
@@ -10,15 +11,12 @@ li{
 
 li a {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Krona One;
     color: #87a7b3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-li a:hover {
-    background-color:black;
 }
 
 ul {    
@@ -28,3 +26,23 @@ ul {
     overflow: hidden;
     background-image:(linear-gradient,#16222A, #3A6073);
   }
+
+  li a {
+  
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s;
+    letter-spacing: 4px
+  }
+  li a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}

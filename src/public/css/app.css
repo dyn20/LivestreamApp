@@ -2,9 +2,35 @@
 
 body
 {
-    background-image: linear-gradient(to right, #031321, #3A6073);
-    font-family: Krona One;
+        /* The image used */
+        background-image: url("../Image/bg1.jpg");
+      
+        /* Full height */
+        height: 100%;
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Knora One';
 }
+
+.localstream
+{
+    position: relative;
+    
+    width: 70%;
+    height: 70%;
+    margin-left: 3rem;
+
+}
+.neonframe
+{
+    position:absolute;
+    width: 70%;
+    height: 70%;
+}
+
 h3{
     text-align: center;
     margin-left: 1.5rem;
@@ -13,11 +39,21 @@ h3{
 }
 ul{
     color: white;
+    font-size: 20px;
 }
+
 li{
     cursor: pointer;
     color: white;
     margin-left: 1.5rem;
+}
+.nickname
+{
+    color: #65d6ce;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1.5rem;
+    margin-bottom: 0.3rem;
 }
 li:hover{
     color: #65d6ce;
@@ -33,30 +69,37 @@ li:hover{
     float: left;
     margin-left: 2rem;
     width: 70%;
+    margin: 0;
+    padding: 0;
     
 }
 
 .display-joiner{
-    font-size: 12px;
+    display: inline;
     float: left;
-    height: 600px;
+    height: 70%;
     width: 23%;
-    border: 1px;
-    background: #393e46;
-    box-shadow: 5px 2px 5px 5px #151515;
+    border: 2px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 2px;
 }
 
 .display-chat{
     display: none;
     font-size: 12px;
     float: left;
-    height: 600px;
+    height: 70%;
     width: 23%;
-    border: 1px;
-    background: #393e46;
-    box-shadow: 5px 2px 5px 5px #151515;
+    border: 2px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
 }
-
+#chat-window{
+    height: 70%;
+    overflow: auto;
+    background: rgba(182, 201, 240, 0);
+    background:#111845a6;
+}
 .button{
     float: right;
 }
@@ -82,74 +125,83 @@ li:hover{
 .online-us{
     margin-top: 0rem;
 }
-/*
-.enter-username{
-    color: #65d6ce;
-    margin: 0 auto; 
-    float: none;
-    margin-top: 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 450px;
-    height: 250px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    background: rgba(0,25,25,0.2);
-    text-align: center;
-    display: none;
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    color: #fff;
+    font-size: 15px;
 }
 
-.center{
-    padding-top: 3rem;
+/*#feedback p{
+    padding: 14px 0px;
+    margin: 0 20px;
+}*/
+
+#output strong{
+    color: #00EAD3;
 }
+
+/*label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}*/
 
 input{
-    border:0;
-    background: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background: rgba(182, 201, 240, 0.1);
+    border: 0;
     display: block;
-    margin: 10px auto;
-    text-align: center;
-    border: 2px solid #3498db;
-    padding: 14px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    font-family: Krona One;
-}
-
-.button1 {
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.button1::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #0cf;
-    border-radius: 10rem;
-    z-index: -2;
+    border-bottom: 1px solid D1D9D9;
+    font-family: Nunito;
+    font-size: 16px;
+    color: #fff;
 }
 
-.button1:hover{
-    background-color: black;
-} 
-*/
+input::placeholder{
+    font-style: italic;
+    font-family:'Press Start 2P';
+    font-size: 9px;
+}
+button{
+    font-family:'Press Start 2P';
+    background: #5F939A;
+    color: #fff;
+    font-size: 13px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+.chatbox {
+    font-size: 18px;
+    font-family:'Press Start 2P';
+    color: white;
+    animation: title 1s ease-in-out infinite alternate;
+    text-align: center;
+}
+  
+@-webkit-keyframes title {
+ from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #126E82, 0 0 40px #126E82, 0 0 50px #126E82, 0 0 60px #126E82, 0 0 70px #126E82;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #51C4D3, 0 0 40px #51C4D3, 0 0 50px #51C4D3, 0 0 60px #51C4D3, 0 0 70px #51C4D3, 0 0 80px #51C4D3;
+    }
+}
+@keyframes title {
+    from {
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #126E82, 0 0 40px #126E82, 0 0 50px #126E82, 0 0 60px #126E82, 0 0 70px #126E82;
+       }
+       
+       to {
+         text-shadow: 0 0 20px #fff, 0 0 30px #51C4D3, 0 0 40px #51C4D3, 0 0 50px #51C4D3, 0 0 60px #51C4D3, 0 0 70px #51C4D3, 0 0 80px #51C4D3;
+       }
+   }
+
 
 /*you join*/
 
@@ -220,13 +272,11 @@ input{
     height: 3.4rem;
     background: whitesmoke;
 }
-
-textarea{
-    float: left;
-    position: relative;
-    width: 270px;
-    border:none;
-    height: 3rem;
-    background: whitesmoke;
+::placeholder
+{
+    font-size: 20px;
 }
 
+.chatbox h2{
+    font-size: 20px;
+}

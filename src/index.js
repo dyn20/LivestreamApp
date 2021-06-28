@@ -8,6 +8,8 @@ const db = require('./config/db');
 const port = 3001;
 const { Cookie } = require('express-session');
 const cookieParser = require('cookie-parser');
+const jwt = require('jsonwebtoken');
+const { json } = require("express");
 
 db.connect();
 

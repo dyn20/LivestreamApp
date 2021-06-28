@@ -1,66 +1,230 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta:wght@200&display=swap');
+*{
+  margin:0;
+  padding:0;
+}
 
-body
-{
-    background-image: linear-gradient(to right, #031321, #3A6073);
-    font-family: Krona One;
-} 
+.container{  padding-top: 20px;
+  padding-bottom: 20px;}
+/*html{
+  position: relative;
+ background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
 .box{
-    width: 300px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #191919;
-    text-align: center;
-    box-shadow: 5px 2px 5px 5px #151515;
-  }
-.box h1{
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 500px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
 }
-.box input[type = "email"],.box input[type = "password"],.box input[type="text"],.box input[type="username"]
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.box span:nth-child(1)
 {
-    border:0;
-    background: none;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    border: 2px solid #3498db;
-    padding: 12px 8px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    font-family: Krona One;
+  transform:rotate(0deg);
 }
-.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type = "email"]:focus,.box input[type = "username"]:focus{
-    width: 280px;
-    border-color: #2ecc71;
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
 }
-.box button[type = "submit"]{
-    border:0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #2ecc71;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
-    font-family: Krona One;
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
 }
-.box button[type = "submit"]:hover{
-    background: #2ecc71;
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+}
+.form-control
+{
+  border:none;
+  padding:15px 20px;
+  margin: 8px auto;
+  border-radius:25px;
+  background:rgba(255,255,255,.1);
+}
+ 
+
+h1{
+  font-size: 20px;
+  font-family:'Krona One';
+  margin: 10px auto;
+  color: #fff;
+  animation: title 1s ease-in-out infinite alternate;
 }
   
-.Note{
-    color: #ce1212;
-    font-size: 0.8rem;
+@-webkit-keyframes title {
+ from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #126E82, 0 0 40px #126E82, 0 0 50px #126E82, 0 0 60px #126E82, 0 0 70px #126E82;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #51C4D3, 0 0 40px #51C4D3, 0 0 50px #51C4D3, 0 0 60px #51C4D3, 0 0 70px #51C4D3, 0 0 80px #51C4D3;
+    }
 }
+@keyframes title {
+    from {
+       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #126E82, 0 0 40px #126E82, 0 0 50px #126E82, 0 0 60px #126E82, 0 0 70px #126E82;
+       }
+       
+       to {
+         text-shadow: 0 0 20px #fff, 0 0 30px #51C4D3, 0 0 40px #51C4D3, 0 0 50px #51C4D3, 0 0 60px #51C4D3, 0 0 70px #51C4D3, 0 0 80px #51C4D3;
+       }
+   }
+
+   .bn30 {
+     margin-top: 15px ;
+    font-family: 'Krona One';
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+  }
+  
+  .bn30 .text {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  }
+  
+  .bn30:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  /*  background: #0e0e10;*/
+  }
+  
+  .bn30:hover {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  }
+  
+  .bn30:hover .text {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  }
+
+  .login
+  {
+    color: #fff;
+    margin: 10px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: 'Krona One';
+  }
+  .login a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .login a:hover{
+    color: turquoise;
+  }
+  input
+  {
+    color: #fff;
+  }

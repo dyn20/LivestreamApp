@@ -6,14 +6,6 @@
 
 .container{  padding-top: 20px;
   padding-bottom: 20px;}
-/*html{
-  position: relative;
- background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 
 .box{
   position: absolute;
@@ -21,7 +13,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 330px;
-  height: 410px;
+  height: 420px;
   background: #111845a6;
   box-sizing: border-box;
   overflow: hidden;
@@ -130,17 +122,16 @@
 .form-control
 {
   border:none;
-	padding:20px 30px;
-  margin: 15px auto;
-	border-radius:25px;
-	background:rgba(255,255,255,.1);
+  padding:15px 20px;
+  margin: 8px auto;
+  border-radius:25px;
+  background:rgba(255,255,255,.1);
 }
  
 
 h1{
   font-size: 20px;
   font-family:'Krona One';
-  padding: 20px 20px;
   margin: 10px auto;
   color: #fff;
   animation: title 1s ease-in-out infinite alternate;
@@ -210,7 +201,7 @@ h1{
     background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
   }
 
-  .register
+  .login
   {
     color: #fff;
     margin: 10px 10px;
@@ -218,14 +209,27 @@ h1{
     font-size: 10px;
     font-family: 'Krona One';
   }
-  .register a{
+  .login a{
     color: #fff;
     text-decoration: none;
   }
-  .register a:hover{
+  .login a:hover{
     color: turquoise;
   }
+  ::placeholder{
+      color: black;
+      font-style: italic;
+  }
 
-  input{
-    color: #fff;
+  .form-group
+  {
+    margin: 20px auto;
+  }
+  .form-control
+  {
+      color: #fff;
+  }
+
+  .Note{
+      color: red;
   }

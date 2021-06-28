@@ -8,38 +8,56 @@ class SingnupController{
     {
         res.render('signup.hbs');
     }
-    store(req, res)
+    store(req, res)//
     {
-        if(req.body.password == req.body.pwrepeat)
+        User.findOne({email:req.body.email},(err,user)=>
         {
-       bcrypt.hash(req.body.password,10,function(err,hashedPass){
-           if(err){
-               res.json({
-                   error: err
-               })
-           }
-           let user = new User ({
-            fullname: req.body.fullname,
-            phonenumber: req.body.phonenumber,
-            username: req.body.username,
-            email: req.body.email,
-            password: hashedPass
+            if(user!=null)
+            {
+                res.json({message:'This email has been taken!'});
+            }
+            else
+            {
+                User.findOne({username:req.body.username},(err,user1)=>
+                {
+                    if(user1!=null)
+                    {
+                    res.json({message:'This username has been taken!'});
+                    }
+                    else{
+                            if(req.body.password == req.body.pwrepeat)
+                            {
+                                bcrypt.hash(req.body.password,10,function(err,hashedPass){
+                                    if(err){
+                                        res.json({
+                                            error: err
+                                        })
+                            }
+                            let user = new User ({
+                                fullname: req.body.fullname,
+                                username: req.body.username,
+                                email: req.body.email,
+                                password: hashedPass
+                            })
+                            user.save()
+                            .then(user =>{
+                                res.redirect('/login');
+                            })
+                            .catch(error => {
+                                res.json({
+                                    message:"An error occured!"
+                                })
+                            })
+                            
+                        })
+                        }
+                        else{
+                            res.redirect('/signup');
+                        }
+                    }
+                })
+            }
         })
-        user.save()
-        .then(user =>{
-            res.redirect('/login');
-        })
-        .catch(error => {
-            res.json({
-                message:"An error occured!"
-            })
-        })
-        
-       })
-    }
-    else{
-        res.redirect('/signup');
-    }
 }
 
 }

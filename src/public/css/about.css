@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta:wght@200&display=swap');
+
+
+h1 {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    
+    font-weight: 300;
+    font-size: 110px;
+    letter-spacing: 0.2em;
+    margin-top: -60px;
+    padding-left: 10px;
+  }
+  h1 {
+    background: -webkit-linear-gradient(white, #38495a);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h1::after {
+    content: attr(data-text);
+    position: absolute;
+    transform: scaleY(-1);
+    left: 0;
+    top: 0;
+    line-height: 0.93em;
+    transform-origin: bottom;
+    filter: blur(1px);
+    width: 100%;
+    background: linear-gradient(0deg, #ffffff 90%, transperent 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+  h1::before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards
+
+}
+@keyframes animate
+{
+    0%
+    {
+        left: -20%;
+    }
+    100%
+    {
+        left: 110%;
+    }
+}
+
+.card-body-app
+{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 600px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: none;
+    background: rgba(0,25,25,0.2);
+}
+.header{
+    padding-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    font-family: Krona One;
+    color: #2196f3 ;
+}
+p{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: Krona One;
+    color: #87a7b3;
+}
+.card-body-admin{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    border: none;
+    background: rgba(0,25,25,0.2);
+}
+

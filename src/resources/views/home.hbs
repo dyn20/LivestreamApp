@@ -1,12 +1,38 @@
+<link rel="stylesheet" href="/css/test.css">
+<link rel="stylesheet" href="/css/homepublic.css">
+<link rel="stylesheet" href="/css/star.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <div class="mt-5">
-    <h1 data-text = "LIVESTREAM">LIVESTREAM</h1>
-    <link rel="stylesheet" href="/css/homepublic.css">
-    <div class="wrapper">
+    <h1 class="abc" data-text = "LIVESTREAM">LIVESTREAM</h1>
+     <div class="wrapper hide" id="button">
          <form method="GET" action="/login">
-               <button type="submit" formaction="/login" class="login">Login</button>
+               <a type="submit" href="/login" class="login-box" id="button1">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               Login
+               </a>
           </form>
           <form method="GET" action="/signup">
-                    <button type="submit" class="signup">Register</button>
+               <a type="submit" href="/signup" class="signup-box">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               Register
+               </a>
            </form>
     </div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div> 
+    <video id="video" src="/image/smoke.mp4" muted="" autoplay=""></video>
+    <h2 id="check">Product of <span>Nan0'5_Smi13 Team</span></h2>
 </div>
+</div>
+<script>
+setTimeout(function(){
+ document.getElementById('button').classList.remove('hide');
+}, 9000);
+</script>
