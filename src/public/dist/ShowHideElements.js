@@ -61,7 +61,10 @@ function show_list_emotion_icons() {
 function release_emotion(source) {
     let child = add_child(source);
     document.getElementById("video").appendChild(child);
+    setTimeout(function(){
+        child.remove();
 
+    },500);
     // $("#child").one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $("#child").remove(); });
     // remove_child(child);
 }

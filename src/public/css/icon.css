@@ -1,16 +1,14 @@
 .emotion-wrapper {
+    z-index: 12;
     position:absolute;
     display: flex;
-    top: 470px;
-    margin-left: 3rem;
-
+    top: 450px;
+    margin-left: 7rem;
     width: 100%;
     margin-top: auto;
     margin-bottom: auto;
     border:none;
-
     outline: none;
-
     overflow: auto;
 }
 
@@ -38,11 +36,10 @@
 #video .emotion-icon {    
     z-index: 1000;
     position: relative;
-
     width: 40px;
     height: 40px;
-
-    left: 50%;
+    left: 30%;
+    margin-top: 7rem;
 }
 
 #child {

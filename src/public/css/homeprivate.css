@@ -169,6 +169,7 @@
   
 .button1 button:hover{
     background: #FF9292;
+    cursor: pointer;
 }
 
 .other-option 

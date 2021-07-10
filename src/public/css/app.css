@@ -3,7 +3,7 @@
 body
 {
         /* The image used */
-        background-image: url("../Image/bg1.jpg");
+        background-image: url("../Image/bg33.jpg");
       
         /* Full height */
         height: 100%;
@@ -15,20 +15,53 @@ body
         font-family: 'Knora One';
 }
 
-.localstream
-{
-    position: relative;
-    
-    width: 70%;
-    height: 70%;
-    margin-left: 3rem;
-
-}
 .neonframe
 {
-    position:absolute;
-    width: 70%;
-    height: 70%;
+    margin-left: 3rem;
+    position: absolute;
+    z-index: 9;
+    margin-top: 0.5rem;
+}
+
+.localstream
+{
+    width: 55%;
+    height: 65%;
+    margin-left: 1rem;
+    position: absolute;
+    margin-top: 4rem;
+
+}
+
+.roomid
+{
+    font-size: 8px;
+    color: #00EAD3;
+    z-index: 10;
+    position: absolute;
+    left: 480px;
+    padding: 0.01rem 1.2rem;
+    margin: auto;
+    font-family: krona One;
+    text-decoration: none;
+    text-shadow:
+      -2px 4px 4px #091243, 
+      0 0 10px #00D0FF,
+      inset 1px 1px 1px white;
+    color: #fff;
+    border: 2px solid;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: 
+      0 1px 2px rgba(0,0,0, 0.6), 
+      2px 1px 4px rgba(0,0,0, 0.3), 
+      2px 4px 3px rgba(3,0,128, 0.3), 
+      0 0 7px 2px #BF02E0, 
+      inset 0 1px 2px rgba(0,0,0, 0.6), 
+      inset 2px 1px 4px rgba(0,0,0, 0.3), 
+      inset 2px 4px 3px rgba(3,0,128, 0.3), 
+      inset 0 0 7px 2px #D83A56;
+      background-color: #4978E0;
 }
 
 h3{
@@ -69,12 +102,14 @@ li:hover{
     float: left;
     margin-left: 2rem;
     width: 70%;
+    height: 70%;
     margin: 0;
     padding: 0;
     
 }
 
 .display-joiner{
+    margin-top: 3rem;
     display: inline;
     float: left;
     height: 70%;
@@ -85,10 +120,11 @@ li:hover{
 }
 
 .display-chat{
+    margin-top: 3rem;
     display: none;
     font-size: 12px;
     float: left;
-    height: 70%;
+    height: 73%;
     width: 23%;
     border: 2px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
@@ -102,6 +138,7 @@ li:hover{
 }
 .button{
     float: right;
+    color: #00EAD3;
 }
 
 .chat{
@@ -132,11 +169,6 @@ li:hover{
     font-size: 15px;
 }
 
-/*#feedback p{
-    padding: 14px 0px;
-    margin: 0 20px;
-}*/
-
 #output strong{
     color: #00EAD3;
 }
@@ -148,7 +180,7 @@ li:hover{
 }*/
 
 input{
-    padding: 12px 20px;
+    padding: 10px 12px;
     box-sizing: border-box;
     background: rgba(182, 201, 240, 0.1);
     border: 0;
@@ -270,13 +302,19 @@ button{
 .send{
     cursor: pointer;
     height: 3.4rem;
-    background: whitesmoke;
 }
 ::placeholder
 {
     font-size: 20px;
 }
 
-.chatbox h2{
-    font-size: 20px;
+.chatbox {
+    font-size: 15px;
+    font-family: 'krona One';
+}
+
+.videofriend
+{
+    position: relative;
+    top:500px;
 }

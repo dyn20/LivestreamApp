@@ -4,13 +4,18 @@
     <link rel="stylesheet" href="/css/fontawesome/css/all.css"> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/dist/ShowHideElements.js"></script>
+    <script src="/dist/forge.js"></script>
     <!--<h3 id="peer-id">Your peer id: </h3>-->
     <div class="container">
-            <h2 class="chatbox" id=roomid></h2>
-        <!--<img src='/Image/neonframe.png' class="neonframe">-->
         <div class="display-video">
+            <div class="roomid">
+                <h2  id=roomid></h2>
+            </div>
+        <div class="img">
+            <img src='/Image/neonframe.png' class="neonframe" style='height: 85%; width: 50%'>
+        </div>
             <div id="video">
-                <video id="localStream" class="localstream" controls></video>
+                <video id="localStream" class="localstream" style="background-color: transparent;" ></video>
                 <br /><br />
             </div>
         </div>
@@ -42,17 +47,16 @@
                 <i onclick="show_hide_chat()" class="fas fa-comment-dots fa-2x"></i>
             </div>
         </div>
-        <div class="chatabc">
+      <!--  <div class="chatabc"> -->
         <div id="display-chat" class="display-chat">
             <h2 class="chatbox">CHAT BOX</h2>
             <div id="chat-window">
-            <div id="output"></div>
-            <div id="feedback"></div>
+                <div id="output"></div>
             </div>
             <input id="message" type="text" placeholder="Type message here..." />
-            <button id="send">Send</button>
+            <button id="send" class="send">Send</button>
          </div>
             <!--<input class="enter-msg" id="enter-msg" placeholder="Your message here...">-->
-        </div>
+     <!--   </div>-->
     </div>
     <script src="/dist/bundle.js"></script>

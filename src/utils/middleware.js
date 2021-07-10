@@ -1,5 +1,4 @@
 
-const express = require('express');
 function setCookie(req, res,cname, cvalue) {
   const cookie = req.cookies.cookieName;
   if (cookie === undefined) {
